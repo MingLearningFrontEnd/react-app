@@ -17,6 +17,7 @@ const Equipment=lazy(()=>import("../pages/equipment"));
 const Enengy=lazy(()=>import("../pages/energy"))
 const Settings = lazy(() => import('../pages/settings'));
 const Personal=lazy(()=>import("../pages/personal"))
+
 export const componentMap:any={
     "/dashboard":<Dashboard/>,
     '/users': <UserList/>,

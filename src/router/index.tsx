@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+// import { createBrowserRouter } from "react-router-dom";
 import RequireAuth from "../utils/http/RequireAuth";
 import { RouteObject } from "react-router-dom";
 const Home = React.lazy(() => import('../pages/home'));
@@ -38,7 +38,7 @@ export const routes: RouteObject[] = [
 
     {
         path:'/finance/surrender',
-        element: <Surrender/>
+        element:<RequireAuth allowed={true} redirectTo="login"><Surrender/></RequireAuth> 
 
     },
 

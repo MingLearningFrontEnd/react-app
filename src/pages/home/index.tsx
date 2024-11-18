@@ -1,10 +1,10 @@
-import { Breadcrumb, Layout, theme } from 'antd';
+import { Layout, theme } from 'antd';
 import { useState } from 'react';
 import NavLeft from '../../components/navLeft';
 import MyBreadCrumb from '../../components/breadCrumb';
 import MyHeader from '../../components/header';
 import { Outlet } from 'react-router-dom';
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Sider } = Layout;
 
 
 
@@ -13,7 +13,7 @@ const { Header, Content, Footer, Sider } = Layout;
 function Home() {
     const [collapsed, setCollapsed] = useState<boolean>(false);
     const {
-        token: { colorBgContainer, borderRadiusLG },
+        token: { colorBgContainer },
     } = theme.useToken();
     return (
         <div className="home">

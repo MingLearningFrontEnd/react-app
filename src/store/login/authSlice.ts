@@ -1,5 +1,8 @@
 import {createSlice} from '@reduxjs/toolkit'
 
+//存token使用redux和本地存储配合使用，初始数据在登陆请求完后收到后端的token数据将它存到redux和本地存储中
+//redux刷新数据会丢失，所以就在从本地存储中获取token
+
 export const authSlice = createSlice({
     name:'auth',
     initialState:{

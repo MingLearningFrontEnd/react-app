@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 
 //登录接口
-Mock.mock('https://www.demo.com/login', 'post', (options: any) => {
+Mock.mock('https://www.demo.com/login', 'post', (options: any) => {  //options里面是前端传来的数据 结构赋值结出来username和password
     const { username, password } = JSON.parse(options.body)
     if (username === 'admin' && password === 'admin123123') {
         return {
