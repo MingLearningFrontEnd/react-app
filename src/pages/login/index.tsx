@@ -73,6 +73,13 @@ function Login() {
                                 登录
                             </Button>
                         </Form.Item>
+                        
+                        <Form.Item>
+                            <p style={{color:'grey'}}>Test account: admin | Password:admin123123</p>
+                            <p style={{color:'grey'}}>Test account: manager | Password:manager123123</p>
+                            <p style={{color:'grey'}}>Test account: user | Password:user123123</p>
+
+                        </Form.Item>
                     </Form>
                 </div>
             </div>
